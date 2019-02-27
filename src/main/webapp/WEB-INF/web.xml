@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>jp.example.www.MainServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Sample01Servlet</servlet-name>
+  	<display-name>Sample01Servlet</display-name>
+  	<description></description>
+  	<servlet-class>jp.example.www.Sample01Servlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>MainServlet</servlet-name>
   	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Sample01Servlet</servlet-name>
+  	<url-pattern>/Sample01Servlet</url-pattern>
   </servlet-mapping>
 </web-app>
