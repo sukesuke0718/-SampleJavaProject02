@@ -29,6 +29,7 @@ public class Sample01Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		String path = "/WEB-INF/jsp/sample01.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(path);
         dispatcher.forward(request, response);
@@ -39,6 +40,21 @@ public class Sample01Servlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+	    float num1 = 0;
+	    float num2 = 0;
+	    float resultNum;
+
+	    try {
+	      num1 = Float.parseFloat(request.getParameter("num1"));
+	      num2 = Float.parseFloat(request.getParameter("num2"));
+	      resultNum = num1 + num2;
+	    } catch (NumberFormatException e) {
+	      resultNum = 0;
+	    }
+		
+	    request.setAttribute("resultNum", resultNum);
+		
 		doGet(request, response);
 	}
 
