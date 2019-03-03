@@ -3,6 +3,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/stylesheet.css">
 	<title>Hello New World!</title>
 </head>
 <body>
