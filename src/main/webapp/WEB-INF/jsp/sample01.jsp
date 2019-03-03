@@ -5,6 +5,7 @@
 <head>
 	<meta name="viewport" content="width=device-width">
 	<meta charset="ja">
+	<link rel="stylesheet" href="css/stylesheet.css">
 	<title>計算</title>
 </head>
 <body>
