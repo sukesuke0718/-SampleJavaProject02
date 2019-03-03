@@ -1,3 +1,8 @@
+//****************************************************************
+//	サーブレット名：MainServlet
+//	機能：初期画面の呼び出しを行う
+//****************************************************************
+
 package jp.example.www;
 
 import java.io.IOException;
@@ -26,9 +31,11 @@ public class MainServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+
+		//	パスをセットする
 		String path = "/WEB-INF/jsp/index.jsp";
+		
+		//	画面への遷移を行う
         RequestDispatcher dispatcher = request.getRequestDispatcher(path);
         dispatcher.forward(request, response);
 		

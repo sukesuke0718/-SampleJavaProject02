@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>jp.example.www.Sample01Servlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Sample02Servlet</servlet-name>
+  	<display-name>Sample02Servlet</display-name>
+  	<description></description>
+  	<servlet-class>jp.example.www.Sample02Servlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>MainServlet</servlet-name>
   	<url-pattern>/MainServlet</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>Sample01Servlet</servlet-name>
   	<url-pattern>/Sample01Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Sample02Servlet</servlet-name>
+  	<url-pattern>/Sample02Servlet</url-pattern>
   </servlet-mapping>
 </web-app>

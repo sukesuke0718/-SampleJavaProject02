@@ -1,3 +1,9 @@
+//****************************************************************
+//	サーブレット名：Sample01Servlet
+//	機能：計算画面の呼び出しを行う
+//		計算を実施し、画面に表示する
+//****************************************************************
+
 package jp.example.www;
 
 import java.io.IOException;
@@ -39,12 +45,12 @@ public class Sample01Servlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		
-	    float num1 = 0;
-	    float num2 = 0;
-	    float resultNum;
+	    float num1 		= 	0;	//	入力値1
+	    float num2 		= 	0;	//	入力値2
+	    float resultNum	=	0;	//	計算結果
 
+	    //	画面上で入力された数字を取得し、足し算を行う
 	    try {
 	      num1 = Float.parseFloat(request.getParameter("num1"));
 	      num2 = Float.parseFloat(request.getParameter("num2"));
@@ -53,6 +59,7 @@ public class Sample01Servlet extends HttpServlet {
 	      resultNum = 0;
 	    }
 		
+	    //	計算結果を画面に表示する
 	    request.setAttribute("resultNum", resultNum);
 		
 		doGet(request, response);

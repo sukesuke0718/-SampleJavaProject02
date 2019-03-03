@@ -51,5 +51,6 @@
   	<java.version>1.8</java.version>
   	<maven.compiler.source>1.8</maven.compiler.source>
   	<maven.compiler.target>1.8</maven.compiler.target>
+  	<UTF-8>1.6</UTF-8>
   </properties>
 </project>
